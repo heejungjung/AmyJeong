@@ -2,22 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
-
-    <title>Reflux HTML CSS Template</title>
-<!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <title>HuijeongJeong</title>
+	<!-- Reflux Template https://templatemo.com/tm-531-reflux -->
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -26,6 +16,180 @@ https://templatemo.com/tm-531-reflux
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <style>
+	.timeline {
+	    padding: 50px 0;
+	    position: relative;
+	}
+	.timeline-nodes {
+	        padding-bottom: 25px;
+	        position: relative;
+	    }
+	.timeline-nodes:nth-child(even) {
+	    flex-direction: row-reverse;
+	}
+	.timeline h3, .timeline p {
+	    padding: 5px 15px;
+	} 
+	.timeline h3{
+	    background: #3c4d3e;
+	}
+	.timeline p, .timeline time {
+	    color: #fff;
+	}
+	.timeline::before {
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    width: 0;
+	    border-left: 2px dashed #3c4d3e;
+	    height: 100%;
+	    z-index: 1;
+	    transform: translateX(-50%);
+	}
+	.timeline-content {
+	    border: 1px solid #3c4d3e;
+	    position: relative;
+	    border-radius: 0 0 10px 10px;
+	    box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2)
+	}
+	.timeline-nodes:nth-child(odd) h3,
+	.timeline-nodes:nth-child(odd) p {
+	    text-align: right;
+	}
+	.timeline-nodes:nth-child(odd) .timeline-date {
+	    text-align: left;
+	}
+	 
+	.timeline-nodes:nth-child(even) .timeline-date {
+	    text-align: right;
+	}
+	.timeline-nodes:nth-child(odd) .timeline-content::after {
+	    content: "";
+	    position: absolute;
+	    top: 5%;
+	    left: 100%;
+	    width: 0;
+	    border-left: 10px solid #3c4d3e;
+	    border-top: 10px solid transparent;
+	    border-bottom: 10px solid transparent;
+	}
+	.timeline-nodes:nth-child(even) .timeline-content::after {
+	    content: "";
+	    position: absolute;
+	    top: 5%;
+	    right: 100%;
+	    width: 0;
+	    border-right: 10px solid #3c4d3e;
+	    border-top: 10px solid transparent;
+	    border-bottom: 10px solid transparent;
+	}
+	.timeline-year {
+	    position: relative;
+	    z-index: 100;
+	    text-align: center;
+	}
+	.timeline-year::before {
+	    content: "";
+	    width: 80px;
+	    height: 80px;
+	    border: 2px dashed #3c4d3e;
+	    border-radius: 50%;
+	    display: block;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%,-50%);
+	    background-color: #fff;
+	    z-index: 1;
+	    text-align: center;
+	}
+	.timeline-year h6 {
+	    position: relative;
+	    z-index: 100;
+	    color: #3c4d3e;
+	    margin:0;
+	    padding:0;
+	    text-align: center;
+	}
+	/*small device style*/
+	@media (max-width: 767px) {
+	    .timeline-nodes:nth-child(odd) h3,
+	    .timeline-nodes:nth-child(odd) p {
+	    text-align: left
+	}
+	.timeline-nodes:nth-child(even) {
+	    flex-direction: row;
+	}
+	    .timeline::before {
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 4%;
+	    width: 0;
+	    border-left: 2px dashed #3c4d3e;
+	    height: 100%;
+	    z-index: 1;
+	    transform: translateX(-50%);
+	}
+	.timeline-year {
+	    position: absolute;
+	    left: 0%;
+	    top: 60px;
+	}
+	.timeline-nodes:nth-child(odd) .timeline-content::after {
+	    content: "";
+	    position: absolute;
+	    top: 5%;
+	    left: auto;
+	    right: 100%;
+	    width: 0;
+	    border-left: 0;
+	    border-right: 10px solid #3c4d3e;
+	    border-top: 10px solid transparent;
+	    border-bottom: 10px solid transparent;
+	}
+	.timeline-nodes:nth-child(even) .timeline-content::after {
+	    content: "";
+	    position: absolute;
+	    top: 5%;
+	    right: 100%;
+	    width: 0;
+	    border-right: 10px solid #3c4d3e;
+	    border-top: 10px solid transparent;
+	    border-bottom: 10px solid transparent;
+	}
+	.timeline-nodes:nth-child(even) .timeline-date {
+	    text-align: left;
+	}
+	.timeline-year::before {
+	    width: 65px;
+	    height: 65px;
+	}
+	}
+	
+	/*extra small device style */
+	@media (max-width: 575px) {
+	    .timeline::before {
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 3%;
+	}
+	.timeline-year {
+	    position: absolute;
+	    left: -5%;
+	    }
+	.timeline-year::before {
+	    width: 60px;
+	    height: 60px;
+	}
+	}
+	</style>
   </head>
 
   <body>
@@ -40,8 +204,8 @@ https://templatemo.com/tm-531-reflux
               <a href="#"><img src="assets/images/Christmas.JPG" alt="" /></a>
             </div>
             <div class="author-content">
-              <h4>Huijeong Jeong</h4>
-              <span>Web Designer</span>
+              <h4>정희정</h4>
+              😄<span>Huijeong Jeong</span>😄
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
@@ -54,7 +218,7 @@ https://templatemo.com/tm-531-reflux
             <div class="social-network">
               <ul class="soial-icons">
                 <li>
-                  <a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a>
+                  <a href="https://fb.com/templatemo"><i class="fa fa-github"></i></a>
                 </li>
                 <li>
                   <a href="#"><i class="fa fa-instagram"></i></a>
@@ -63,7 +227,7 @@ https://templatemo.com/tm-531-reflux
                   <a href="#"><i class="fa fa-linkedin"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-rss"></i></a>
+                  <a href="#"><i class="fa fa-comment"></i></a>
                 </li>
               </ul>
             </div>
@@ -77,12 +241,12 @@ https://templatemo.com/tm-531-reflux
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <span
-              >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
-              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
-            >
+            <h1>About Me</h1>
+            <div class="line-dec"></div><br>
+            <h4>안녕하세요, 저는 정희정입니다.😀</h4><br>
+		    <p>👉 저는 풀스택 개발자를 목표로 하고 있습니다.</p>
+			<p>👉 데이터 분석,백엔드,웹 개발 등 코딩으로 무엇인가를 만들고 결과를 도출해내는 것을 즐깁니다.</p>
+			<p>👉 배움을 멈추지 않고 계속 도전해나가는 삶을 살고 싶습니다.</p>
           </div>
           <div class="left-image-post">
             <div class="row">
@@ -93,16 +257,12 @@ https://templatemo.com/tm-531-reflux
               </div>
               <div class="col-md-6">
                 <div class="right-text">
-                  <h4>Reflux HTML CSS Template</h4>
-                  <p>
-                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
-                    sed. Mauris viverra, erat non sagittis gravida, elit dui
-                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
-                    tincidunt quam vitae neque pharetra dignissim eget ut
-                    libero.
-                  </p>
+                  <h4>Talk To Talk</h4>
+                  <p>직업 훈련 과정에서 작업한 Talk To Talk이라는 채팅 웹사이트 입니다.</p>
+                  <p>MySQL과 연결하여 DB에 회원정보 및 채팅방 정보,채팅 메시지를 저장하여 후에 데이터 분석에 이용할 수 있도록 설정하였습니다.</p> 
+                  <p>후에 페이스톡 및 다양한 채팅 통계 자료를 추가하여 기능을 완성시킬 예정입니다. 🙏</p> 
                   <div class="white-button">
-                    <a href="#">Read More</a>
+                    <a href="#">Visit</a>
                   </div>
                 </div>
               </div>
@@ -112,17 +272,11 @@ https://templatemo.com/tm-531-reflux
             <div class="row">
               <div class="col-md-6">
                 <div class="left-text">
-                  <h4>Sed sagittis rhoncus velit</h4>
-                  <p>
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vestibulum fermentum
-                    eleifend nibh, vitae sodales elit finibus pretium.
-                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
-                    semper.
-                  </p>
-                  <div class="white-button">
-                    <a href="#">Read More</a>
-                  </div>
+                  <h4>Comento</h4>
+                  <p>데이터 분석가로서의 실무를 경험하고자 온라인 직무 체험 캠프에 참가하였습니다.</p>
+                  <p>1-2주째에 데이터 전처리 작업,3주째에 데이터 분석 및 결과 발표,4주째 실무 데이터를 이용한 데이터 분석 작업</p>
+                  <p>총 한달 간의 직무 체험 캠프를 통해서 복잡한 실무 데이터에 대한 대처 방법과 적절한 문서화 방법을 배울 수 있었습니다.</p>
+                  <p>또한 현직 멘토님으로부터 좋은 데이터 분석가가 되기 위한 조언을 얻어 앞으로의 방향성을 수립하는 데 좋은 경험이 되었습니다. 👩‍🎓</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -132,6 +286,77 @@ https://templatemo.com/tm-531-reflux
               </div>
             </div>
           </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>CodeIt</h4>
+                  <p>컴퓨터공학적 기본 소양을 쌓고자 노력하였습니다.</p>
+                  <p>자료구조,알고리즘,컴퓨터학개론,MySQL,Git 등 👩‍💻</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="right-image-post">
+          <div class="container">
+		      <div class="timeline">
+		        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+		          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+		            <h3 class=" text-light">경북대학교 통계학 전공</h3>
+		            <p>🟡빅데이터 연계전공</p>
+		          </div>
+		          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-year text-md-center">
+		            <h6>2015</h6>
+		          </div>
+		          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+		            <time>2015-02-01 ~ 2019-08-31</time>
+		          </div>
+		        </div>
+		        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+		          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+		            <h3 class=" text-light">Timeline Heading</h3>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+		          </div>
+		          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-year text-md-center">
+		            <h6>2015</h6>
+		          </div>
+		          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+		            <time>2018-02-23</time>
+		          </div>
+		        </div>
+		        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+		          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+		            <h3 class=" text-light">Timeline Heading</h3>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+		          </div>
+		          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-year text-md-center">
+		            <h6>2015</h6>
+		          </div>
+		          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+		            <time>2018-02-23</time>
+		          </div>
+		        </div>
+		        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+		          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+		            <h3 class=" text-light">Timeline Heading</h3>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+		          </div>
+		          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-year text-md-center">
+		            <h6>2015</h6>
+		          </div>
+		          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+		            <time>2018-02-23</time>
+		          </div>
+		        </div>
+		      </div>
+			</div>
+          </div>
         </div>
       </section>
 
@@ -140,21 +365,16 @@ https://templatemo.com/tm-531-reflux
           <div class="section-heading">
             <h2>What I’m good at?</h2>
             <div class="line-dec"></div>
-            <span
-              >Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
-              Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
-              Nullam eu faucibus diam. Donec eget massa ante.</span
-            >
           </div>
           <div class="row">
             <div class="col-md-6">
               <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>HTML5 &amp; CSS3</h4>
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Admin Dashboard</h4>
                 <p>
-                  Phasellus non convallis dolor. Integer tempor hendrerit arcu
-                  at bibendum. Sed ac ante non metus vehicula congue quis eget
-                  eros.
+                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
+                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
+                  leo nec felis porttitor.
                 </p>
               </div>
             </div>
@@ -182,12 +402,12 @@ https://templatemo.com/tm-531-reflux
             </div>
             <div class="col-md-6">
               <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Admin Dashboard</h4>
+                <div class="first-service-icon service-icon"></div>
+                <h4>HTML5 &amp; CSS3</h4>
                 <p>
-                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
-                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
-                  leo nec felis porttitor.
+                  Phasellus non convallis dolor. Integer tempor hendrerit arcu
+                  at bibendum. Sed ac ante non metus vehicula congue quis eget
+                  eros.
                 </p>
               </div>
             </div>
@@ -377,54 +597,26 @@ https://templatemo.com/tm-531-reflux
           <div class="row">
             <div class="right-content">
               <div class="container">
-                <form id="contact" action="" method="post">
+                <form id="contact" action="mailto:junghee528@naver.com" method="post" enctype="multipart/form-data" name="EmailForm">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required=""/>
                       </fieldset>
                     </div>
                     <div class="col-md-6">
                       <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required=""/>
                       </fieldset>
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
+                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required=""/>
                       </fieldset>
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                       </fieldset>
                     </div>
                     <div class="col-md-12">
