@@ -369,9 +369,11 @@ button:hover {
 
 .service-item {
     margin-bottom: 10px;
-    padding: 50px;
+    padding: 30px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: all 0.5s;
+    display: grid;
+    place-items: center; /* 수평 및 수직 가운데 정렬 */
 }
 
 .service-item h4 {
@@ -387,17 +389,8 @@ button:hover {
 }
 
 .service-item .service-icon {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-    margin-bottom: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.service-item .service-icon2 {
-    width: 400px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -467,47 +460,74 @@ button:hover {
     background-image: url(../images/language/css2.png);
 }
 
-/* framework/api/db/library/server/engine */
-.service-item .springboot-service-icon {
-    background-image: url(../images/tool/springboot.png);
-}
-.service-item .springsecurity-service-icon {
-    background-image: url(../images/tool/springsecurity.png);
-}
-.service-item .springsockets-service-icon {
-    background-image: url(../images/tool/springsockets.png);
-}
-.service-item .maven-service-icon {
-    background-image: url(../images/tool/maven.png);
-}
-.service-item .tomcat-service-icon {
-    background-image: url(../images/tool/tomcat.png);
-}
-.service-item .jpa-service-icon {
-    background-image: url(../images/tool/hibernate.png);
-}
-.service-item .thymeleaf-service-icon {
-    background-image: url(../images/tool/thymeleaf.png);
-}
-.service-item .bootstrap-service-icon {
-    background-image: url(../images/tool/bootstrap.png);
+
+.service-item2 {
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: rgba(250, 250, 250, 1);
+    transition: all 0.5s;
+    display: grid;
+    place-items: center; /* 수평 및 수직 가운데 정렬 */
 }
 
-/* tool */
-.service-item .github-service-icon {
+.service-item2 h4 {
+    transition: all 0.5s;
+}
+
+.service-item2:hover h4 {
+    color: #1e1e1e;
+}
+
+.service-item2 .service-icon {
+    width: 200px; /* 가로 크기를 부모 요소에 맞게 설정 */
+    height: 100px; /* 세로 크기를 자동으로 조정 */
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* framework/api/db/library/server/engine */
+.service-item2 .springboot-service-icon {
+    background-image: url(../images/tool/springboot.png);
+}
+.service-item2 .springsecurity-service-icon {
+    background-image: url(../images/tool/springsecurity.png);
+}
+.service-item2 .springsockets-service-icon {
+    background-image: url(../images/tool/springsockets.png);
+}
+.service-item2 .maven-service-icon {
+    background-image: url(../images/tool/maven.png);
+}
+.service-item2 .tomcat-service-icon {
+    background-image: url(../images/tool/tomcat.png);
+}
+.service-item2 .jpa-service-icon {
+    background-image: url(../images/tool/hibernate.png);
+}
+.service-item2 .thymeleaf-service-icon {
+    background-image: url(../images/tool/thymeleaf.png);
+}
+.service-item2 .bootstrap-service-icon {
+    background-image: url(../images/tool/bootstrap.png);
+}
+.service-item2 .github-service-icon {
     background-image: url(../images/tool/github.png);
 }
-.service-item .sourcetree-service-icon {
-    background-image: url(../images/tool/sourcetree.png);
+.service-item2 .amplitude-service-icon {
+    background-image: url(../images/tool/amplitude.png);
 }
-.service-item .eclipse-service-icon {
-    background-image: url(../images/tool/eclipse.png);
+.service-item2 .tableau-service-icon {
+    background-image: url(../images/tool/tableau.png);
 }
-.service-item .rstudio-service-icon {
-    background-image: url(../images/tool/rstudio.png);
+.service-item2 .airflow-service-icon {
+    background-image: url(../images/tool/airflow.png);
 }
-.service-item .visualstudio-service-icon {
-    background-image: url(../images/tool/visualstudio.png);
+.service-item2 .jira-service-icon {
+    background-image: url(../images/tool/jira.png);
+}
+.service-item2 .aws-service-icon {
+    background-image: url(../images/tool/aws.png);
 }
 
 /* My Work */
