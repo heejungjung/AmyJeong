@@ -1,15 +1,7 @@
-/*
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
-Reflux Template
-
-https://templatemo.com/tm-531-reflux
-
-*/
-
-@import url(fontawesome.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif
 }
 
 #page-wraper {
@@ -18,97 +10,79 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100%;
+    width: 100%
 }
 
-
-/* Basic */
-
 body {
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 input,
-select,
 textarea {
-    outline: none;
+    outline: 0
 }
 
 a,
 a:hover {
-    text-decoration: none;
+    text-decoration: none
 }
 
 p {
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
+    color: #fff
 }
 
 h4 {
     font-size: 26px;
     font-weight: 700;
     color: #fff;
-    letter-spacing: 0.25px;
+    letter-spacing: .25px
 }
 
 img {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 ul {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none
 }
 
 ul li {
-    display: inline-block;
+    display: inline-block
 }
 
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 *,
-*:before,
-*:after {
+:after,
+:before {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-.clearfix {
-    zoom: 1;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
+    box-sizing: inherit
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .main-nav {
-    text-align: center;
+    text-align: center
 }
 
 .main-nav li:last-child a {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff
 }
 
 .main-nav li {
-    display: block;
+    display: block
 }
 
 .main-nav li a {
@@ -119,49 +93,47 @@ html {
     font-weight: 700;
     color: #fff;
     width: 100%;
-    transition: all 0.5s;
-    border-top: 2px solid #fff;
+    transition: all .5s;
+    border-top: 2px solid #fff
 }
 
-.main-nav li:hover a,
-.main-nav li.active a {
+.main-nav li.active a,
+.main-nav li:hover a {
     background: #fff;
-    color: #3c4d3e;
+    color: #3c4d3e
 }
-
-/* Sidebar Menu */
 
 .menu .image {
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .menu .image img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    text-align: center;
+    text-align: center
 }
 
 .menu .author-content {
-    margin: 40px 0px 60px 0px;
+    margin: 40px 0 60px 0
 }
 
 .menu .author-content h4 {
-    margin-bottom: 0px;
+    margin-bottom: 0
 }
 
 .menu .author-content span {
     font-size: 13px;
     font-style: italic;
-    color: #fff;
+    color: #fff
 }
 
 .menu .social-network {
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .menu .social-network ul li {
-    margin: 0 3px;
+    margin: 0 3px
 }
 
 .menu .social-network ul li a {
@@ -170,83 +142,83 @@ html {
     display: inline-block;
     text-align: center;
     line-height: 40px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .2);
     color: #fff;
     font-size: 14px;
-    transition: all 0.5s;
+    transition: all .5s
 }
 
 .menu .social-network ul li a:hover {
     background-color: #fff;
-    color: #3c4d3e;
+    color: #3c4d3e
 }
 
 .menu .copyright-text {
     position: relative;
-    margin-top: 60px;
+    margin-top: 60px
 }
 
 .menu .copyright-text p {
-    border-top: 1px solid rgba(250, 250, 250, 0.1);
+    border-top: 1px solid rgba(250, 250, 250, .1);
     display: inline-block;
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
-    font-size: 13px;
+    font-size: 13px
 }
 
-.menu:before,
-.menu:after {
+.menu:after,
+.menu:before {
     content: "";
-    display: table;
+    display: table
 }
 
 .menu:after {
-    clear: both;
+    clear: both
 }
 
 .menu a {
     text-decoration: none;
-    color: inherit;
+    color: inherit
 }
 
 .menu {
-    text-align: center;
+    text-align: center
 }
 
 .menu::-webkit-scrollbar {
-    display: none;
+    display: none
 }
 
 .menu {
     left: 10%;
-  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-  -webkit-overflow-scrolling: touch;
-  background-color: #3c4d3e;
-  box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh !important;
-  max-width: 80vw !important;
-  min-width: 45px !important;
-  outline: none;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  padding: 0;
-  position: fixed !important;
-  top: calc(0px);  
-  width: 20%;
-  will-change: transform;
-  z-index: 9999 !important;
+    -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, .21, 1);
+    -webkit-overflow-scrolling: touch;
+    background-color: #3c4d3e;
+    box-sizing: border-box;
+    height: 100vh;
+    max-height: 100vh !important;
+    max-width: 80vw !important;
+    min-width: 45px !important;
+    outline: 0;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 0;
+    position: fixed !important;
+    top: calc(0px);
+    width: 20%;
+    will-change: transform;
+    z-index: 9999 !important
 }
 
 .menu-toggle {
-  color: #fff;
-  cursor: pointer;
-  font-size: 25px;
-  position: fixed;
-  right: 25px;
-  top: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    right: 25px;
+    top: 25px
 }
 
 #menu-toggle {
@@ -261,11 +233,11 @@ html {
     height: 60px;
     text-align: center;
     display: inline-block;
-    line-height: 60px;
+    line-height: 60px
 }
 
 .menu-close {
-  cursor: pointer;
+    cursor: pointer
 }
 
 #menu-close {
@@ -277,11 +249,8 @@ html {
     height: 60px;
     text-align: center;
     display: inline-block;
-    line-height: 60px;
+    line-height: 60px
 }
-
-
-/* Section */
 
 .section {
     color: #fff;
@@ -291,36 +260,33 @@ html {
     position: relative;
     min-height: 100vh;
     padding-bottom: 80px;
-    border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+    border-bottom: 3px solid rgba(250, 250, 250, .25)
 }
 
 .section-heading {
     text-align: center;
-    padding: 80px 45px;
+    padding: 80px 45px
 }
 
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
+    color: #fff
 }
 
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
     background-color: #3c4d3e;
-    margin: 10px auto;
+    margin: 10px auto
 }
 
 .section-heading span {
     margin-top: 5px;
     font-size: 16px;
     color: #fff;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px
 }
-
-
-/* Buttons */
 
 .white-button a {
     display: inline-block;
@@ -329,14 +295,14 @@ html {
     color: #3c4d3e;
     font-size: 13px;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
     text-transform: uppercase;
-    transition: all 0.5s;
+    transition: all .5s
 }
 
 .white-button a:hover {
     background-color: #3c4d3e;
-    color: #fff;
+    color: #fff
 }
 
 button {
@@ -346,46 +312,44 @@ button {
     color: #3c4d3e;
     font-size: 12px;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
     text-transform: uppercase;
-    transition: all 0.5s;
+    transition: all .5s;
     border: none;
-    outline: none;
-    cursor: pointer;
+    outline: 0;
+    cursor: pointer
 }
 
 button:hover {
-    outline: none;
+    outline: 0;
     background-color: #3c4d3e;
-    color: #fff;
+    color: #fff
 }
-
-/* Services */
 
 .my-services .col-md-6 {
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 5px
 }
 
 .service-item {
     margin-bottom: 10px;
     padding: 30px;
-    background-color: rgba(250, 250, 250, 0.1);
-    transition: all 0.5s;
+    background-color: rgba(250, 250, 250, .1);
+    transition: all .5s;
     display: grid;
-    place-items: center; /* 수평 및 수직 가운데 정렬 */
+    place-items: center
 }
 
 .service-item h4 {
-    transition: all 0.5s;
+    transition: all .5s
 }
 
 .service-item:hover {
-    background-color: rgba(250, 250, 250, 1);
+    background-color: rgba(250, 250, 250, 1)
 }
 
 .service-item:hover h4 {
-    color: #1e1e1e;
+    color: #1e1e1e
 }
 
 .service-item .service-icon {
@@ -393,158 +357,167 @@ button:hover {
     height: 100px;
     display: inline-block;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .service-item .r-service-icon {
-    background-image: url(../images/language/r1.png);
+    background-image: url(../images/language/r1.png)
 }
 
 .service-item:hover .r-service-icon {
-    background-image: url(../images/language/r2.png);
+    background-image: url(../images/language/r2.png)
 }
 
 .service-item .java-service-icon {
-    background-image: url(../images/language/java1.png);
+    background-image: url(../images/language/java1.png)
 }
 
 .service-item:hover .java-service-icon {
-    background-image: url(../images/language/java2.png);
+    background-image: url(../images/language/java2.png)
 }
 
 .service-item .mysql-service-icon {
-    background-image: url(../images/language/mysql1.png);
+    background-image: url(../images/language/mysql1.png)
 }
 
 .service-item:hover .mysql-service-icon {
-    background-image: url(../images/language/mysql2.png);
+    background-image: url(../images/language/mysql2.png)
 }
 
 .service-item .sas-service-icon {
-    background-image: url(../images/language/sas1.png);
+    background-image: url(../images/language/sas1.png)
 }
 
 .service-item:hover .sas-service-icon {
-    background-image: url(../images/language/sas2.png);
+    background-image: url(../images/language/sas2.png)
 }
 
 .service-item .py-service-icon {
-    background-image: url(../images/language/py1.png);
+    background-image: url(../images/language/py1.png)
 }
 
 .service-item:hover .py-service-icon {
-    background-image: url(../images/language/py2.png);
+    background-image: url(../images/language/py2.png)
 }
 
 .service-item .js-service-icon {
-    background-image: url(../images/language/js1.png);
+    background-image: url(../images/language/js1.png)
 }
 
 .service-item:hover .js-service-icon {
-    background-image: url(../images/language/js2.png);
+    background-image: url(../images/language/js2.png)
 }
 
 .service-item .html-service-icon {
-    background-image: url(../images/language/html1.png);
+    background-image: url(../images/language/html1.png)
 }
 
 .service-item:hover .html-service-icon {
-    background-image: url(../images/language/html2.png);
+    background-image: url(../images/language/html2.png)
 }
 
 .service-item .css-service-icon {
-    background-image: url(../images/language/css1.png);
+    background-image: url(../images/language/css1.png)
 }
 
 .service-item:hover .css-service-icon {
-    background-image: url(../images/language/css2.png);
+    background-image: url(../images/language/css2.png)
 }
-
 
 .service-item2 {
     margin-bottom: 10px;
     padding: 30px;
     background-color: rgba(250, 250, 250, 1);
-    transition: all 0.5s;
+    transition: all .5s;
     display: grid;
-    place-items: center; /* 수평 및 수직 가운데 정렬 */
+    place-items: center
 }
 
 .service-item2 h4 {
-    transition: all 0.5s;
+    transition: all .5s
 }
 
 .service-item2:hover h4 {
-    color: #1e1e1e;
+    color: #1e1e1e
 }
 
 .service-item2 .service-icon {
-    width: 200px; /* 가로 크기를 부모 요소에 맞게 설정 */
-    height: 100px; /* 세로 크기를 자동으로 조정 */
+    width: 200px;
+    height: 100px;
     display: inline-block;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
-/* framework/api/db/library/server/engine */
 .service-item2 .springboot-service-icon {
-    background-image: url(../images/tool/springboot.png);
-}
-.service-item2 .springsecurity-service-icon {
-    background-image: url(../images/tool/springsecurity.png);
-}
-.service-item2 .springsockets-service-icon {
-    background-image: url(../images/tool/springsockets.png);
-}
-.service-item2 .maven-service-icon {
-    background-image: url(../images/tool/maven.png);
-}
-.service-item2 .tomcat-service-icon {
-    background-image: url(../images/tool/tomcat.png);
-}
-.service-item2 .jpa-service-icon {
-    background-image: url(../images/tool/hibernate.png);
-}
-.service-item2 .thymeleaf-service-icon {
-    background-image: url(../images/tool/thymeleaf.png);
-}
-.service-item2 .bootstrap-service-icon {
-    background-image: url(../images/tool/bootstrap.png);
-}
-.service-item2 .github-service-icon {
-    background-image: url(../images/tool/github.png);
-}
-.service-item2 .amplitude-service-icon {
-    background-image: url(../images/tool/amplitude.png);
-}
-.service-item2 .tableau-service-icon {
-    background-image: url(../images/tool/tableau.png);
-}
-.service-item2 .airflow-service-icon {
-    background-image: url(../images/tool/airflow.png);
-}
-.service-item2 .jira-service-icon {
-    background-image: url(../images/tool/jira.png);
-}
-.service-item2 .aws-service-icon {
-    background-image: url(../images/tool/aws.png);
+    background-image: url(../images/tool/springboot.png)
 }
 
-/* My Work */
+.service-item2 .springsecurity-service-icon {
+    background-image: url(../images/tool/springsecurity.png)
+}
+
+.service-item2 .springsockets-service-icon {
+    background-image: url(../images/tool/springsockets.png)
+}
+
+.service-item2 .maven-service-icon {
+    background-image: url(../images/tool/maven.png)
+}
+
+.service-item2 .tomcat-service-icon {
+    background-image: url(../images/tool/tomcat.png)
+}
+
+.service-item2 .jpa-service-icon {
+    background-image: url(../images/tool/hibernate.png)
+}
+
+.service-item2 .thymeleaf-service-icon {
+    background-image: url(../images/tool/thymeleaf.png)
+}
+
+.service-item2 .bootstrap-service-icon {
+    background-image: url(../images/tool/bootstrap.png)
+}
+
+.service-item2 .github-service-icon {
+    background-image: url(../images/tool/github.png)
+}
+
+.service-item2 .amplitude-service-icon {
+    background-image: url(../images/tool/amplitude.png)
+}
+
+.service-item2 .tableau-service-icon {
+    background-image: url(../images/tool/tableau.png)
+}
+
+.service-item2 .airflow-service-icon {
+    background-image: url(../images/tool/airflow.png)
+}
+
+.service-item2 .jira-service-icon {
+    background-image: url(../images/tool/jira.png)
+}
+
+.service-item2 .aws-service-icon {
+    background-image: url(../images/tool/aws.png)
+}
 
 section.my-work .section-heading {
     text-align: center;
-    padding: 80px 45px 50px 45px;
+    padding: 80px 45px 50px 45px
 }
 
 .isotope-wrapper {
     position: relative;
     width: 100%;
-    margin: auto;
+    margin: auto
 }
 
-.isotope-toolbar input[type="radio"] {
-    display: none;
+.isotope-toolbar input[type=radio] {
+    display: none
 }
 
 .isotope-toolbar span {
@@ -555,41 +528,41 @@ section.my-work .section-heading {
     font-size: 15px;
     font-weight: 700;
     border-bottom: 2px solid transparent;
-    transform: ease-in-out 0.5s;
-    cursor: pointer;
+    transform: ease-in-out .5s;
+    cursor: pointer
 }
 
-.isotope-toolbar input[type="radio"]:checked + span {
+.isotope-toolbar input[type=radio]:checked+span {
     color: #3c4d3e;
-    border-bottom: 2px solid #3c4d3e;
+    border-bottom: 2px solid #3c4d3e
 }
 
 .isotope-box {
     position: relative;
-    width: 100%;
+    width: 100%
 }
 
 .isotope-toolbar {
     text-align: center;
-    margin: 10px;
+    margin: 10px
 }
 
 .isotope-toolbar p {
     border-top: 1px solid #fff;
-    padding-top: 15px;
+    padding-top: 15px
 }
 
 .isotope-toolbar a {
-    color: #fff;
+    color: #fff
 }
 
 .isotope-item {
     position: relative;
     width: 48%;
     margin: 1%;
-    border-bottom: 2px solid rgba(250,250,250,0.1);
+    border-bottom: 2px solid rgba(250, 250, 250, .1);
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 .isotope-item img {
@@ -597,133 +570,129 @@ section.my-work .section-heading {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
-}
-
-.lazyload {
-    background: #f7f7f7;
-}
-
-.lazyloading {
-    background: #f7f7f7 url(//afarkas.github.io/lazysizes/assets/imgs/loader.gif) no-repeat center;
-    min-height: 60px;
+    border-radius: 5px
 }
 
 figure.snip1321 {
-  overflow: hidden;
-  text-align: center;
-  -webkit-perspective: 50em;
-  perspective: 50em;
+    overflow: hidden;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em
 }
+
 figure.snip1321 * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out
 }
+
 figure.snip1321 img {
-  height:400px;
+    height: 400px
 }
+
 figure.snip1321 figcaption {
-  top: 50%;
-  left: 20px;
-  right: 20px;
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1
 }
+
 figure.snip1321 h4 {
     margin-top: 15px;
-  margin-bottom: 5px;
-  color: #232323;
+    margin-bottom: 5px;
+    color: #232323
 }
+
 figure.snip1321 span {
     font-size: 14px;
     font-style: italic;
     display: block;
-    color: #7a7a7a;
+    color: #7a7a7a
 }
+
 figure.snip1321 i {
-  position: relative!important;
-  font-size: 18px;
-  background-color: #3c4d3e;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 5px;
-  color: #fff;
+    position: relative !important;
+    font-size: 18px;
+    background-color: #3c4d3e;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #fff
 }
+
 figure.snip1321:after {
-  background-color: #ffffff;
-  position: absolute;
-  content: "";
-  display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0;
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0
 }
+
 figure.snip1321 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-figure.snip1321:hover figcaption,
-figure.snip1321.hover figcaption {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
-  opacity: 0.9;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1
 }
 
+figure.snip1321:hover figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s
+}
 
-/* Contact Me */
+figure.snip1321:hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: .9
+}
 
 section.contact-me {
-    border-bottom: none;
+    border-bottom: none
 }
 
 #contact input {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
-    border-radius: 0px;
+    background-color: rgba(250, 250, 250, .1);
+    border: 1px solid rgba(250, 250, 250, 1);
+    border-radius: 0;
     margin-bottom: 30px;
     color: #fff;
     font-size: 14px;
     height: 40px;
     line-height: 40px;
     width: 100%;
-    padding-left: 15px;
+    padding-left: 15px
 }
 
 #contact input:focus {
-    outline: none;
-    box-shadow: none;
+    outline: 0;
+    box-shadow: none
 }
 
 #contact textarea {
-    background-color: rgba(250,250,250,0.1);
-    border: 1px solid rgba(250,250,250,1);
-    border-radius: 0px;
+    background-color: rgba(250, 250, 250, .1);
+    border: 1px solid rgba(250, 250, 250, 1);
+    border-radius: 0;
     margin-bottom: 30px;
     color: #fff;
     font-size: 14px;
@@ -731,147 +700,147 @@ section.contact-me {
     max-height: 220px;
     line-height: 40px;
     width: 100%;
-    padding-left: 15px;
+    padding-left: 15px
 }
 
 #contact textarea:focus {
-    outline: none;
-    box-shadow: none;
+    outline: 0;
+    box-shadow: none
 }
 
 #contact {
-    text-align: center;
+    text-align: center
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width:1680px) {
     .menu {
-        left: 5%;
+        left: 5%
     }
 
     .section {
         color: #fff;
         width: 65%;
         right: 5%;
-        left: 30%;
+        left: 30%
     }
 }
 
-@media screen and (max-width: 1680px) and (min-width: 846px) { 
+@media screen and (max-width:1680px) and (min-width:846px) {
     .menu .social-network ul li a {
         width: 36px;
         height: 36px;
-        line-height: 36px;
+        line-height: 36px
     }
 
     .menu .social-network ul li {
-        margin: 0;
+        margin: 0
     }
 
     .menu .image {
-        margin-top: 60px;
+        margin-top: 60px
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width:1280px) {
     .menu {
-        left: 0%;
+        left: 0
     }
 
-    .right-image-post h4,
-    .left-image-post h4 {
-        margin-top: 0px;
+    .left-image-post h4,
+    .right-image-post h4 {
+        margin-top: 0
     }
 
-    .right-image-post p,
-    .left-image-post p {
-        margin-top: 15px;
+    .left-image-post p,
+    .right-image-post p {
+        margin-top: 15px
     }
 
-    .right-image-post .white-button,
-    .left-image-post .white-button {
-        margin-top: 25px;
+    .left-image-post .white-button,
+    .right-image-post .white-button {
+        margin-top: 25px
     }
-
 }
 
 .menu .container {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0
 }
 
-@media screen and (max-width: 1280px) and (min-width: 846px) {
+@media screen and (max-width:1280px) and (min-width:846px) {
     .menu {
-        width: 25%;
+        width: 25%
     }
 }
 
-#menu-toggle,
-#menu-close {
-    display: none;
-}  
+#menu-close,
+#menu-toggle {
+    display: none
+}
 
-@media screen and (max-width: 845px) {        
-    #menu-toggle,
-    #menu-close {
-        display: inline-block;
-    }    
+@media screen and (max-width:845px) {
 
-    .menu {        
+    #menu-close,
+    #menu-toggle {
+        display: inline-block
+    }
+
+    .menu {
         width: 320px;
         -webkit-transform: translateX(-100%) !important;
         transform: translateX(-100%) !important;
-        transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
-        transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+        transition: -webkit-transform 233ms cubic-bezier(0, 0, .21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, .21, 1);
+        transition: transform 233ms cubic-bezier(0, 0, .21, 1), -webkit-transform 233ms cubic-bezier(0, 0, .21, 1)
     }
 
     .menu .image {
-        margin-top: 40px;        
+        margin-top: 40px
     }
 
     .menu .image img {
         width: 120px;
-        height: 120px;
+        height: 120px
     }
 
     .menu .author-content {
-        margin: 20px 0px 40px 0px;
+        margin: 20px 0 40px 0
     }
 
     .menu .container {
         padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .menu.open {
-        display: inline-block;
-        -webkit-transform: translateX(0) !important;
-                transform: translateX(0) !important;
+        padding-right: 15px
     }
 
     .responsive-nav {
-        display: inline-block;
+        display: inline-block
     }
+
     .section {
         width: 94%;
         right: 3%;
-        left: 3%;
+        left: 3%
     }
+
     .isotope-item {
         width: 94%;
-        margin: 3%;
+        margin: 3%
     }
+
     .left-image-post img {
-        margin-bottom: 30px;
+        margin-bottom: 30px
     }
+
     .right-image-post img {
-        margin-top: 30px;
+        margin-top: 30px
     }
+
     .isotope-item {
         border-bottom: none;
-        text-align: center;
+        text-align: center
     }
+
     .isotope-toolbar {
-        margin-bottom: 20px;
+        margin-bottom: 20px
     }
 }
